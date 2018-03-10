@@ -40,7 +40,6 @@ public class LoginActivity extends AppCompatActivity {
         /*ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);*/
 
-        emailEdit= (EditText) findViewById (R.id.editTextLoginEmail);
         passEdit = (EditText) findViewById (R.id.editTextLoginPassword);
         signInButton = (Button) findViewById (R.id.buttonSignIn);
         StrictMode.ThreadPolicy sp= new StrictMode.ThreadPolicy.Builder().permitAll().build();
