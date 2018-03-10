@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg1"
+
     android:orientation="vertical">
 
     <LinearLayout
@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="16sp"
-        android:background="#ddffffff">
+        android:background="#ffffff">
 
         <ScrollView
             android:id="@+id/login_form"
@@ -20,6 +20,7 @@
             android:layout_height="match_parent">
 
             <LinearLayout
+                android:id="@+id/email_login_form"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -32,7 +33,7 @@
                     <ImageView
                         android:layout_width="80sp"
                         android:layout_height="80sp"
-                        android:src="@drawable/hp_icon"
+                        android:src="@drawable/hp"
                         android:layout_margin="20sp"/>
                     <TextView
                         android:layout_width="match_parent"
@@ -50,7 +51,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="PENDING CHALLAN"
+                    android:text="CHALLAN HISTORY"
                     android:textAlignment="center"
                     android:textColor="#c62b5a"
                     android:textSize="25sp"
@@ -59,7 +60,7 @@
                     android:layout_marginBottom="10sp"/>
 
                 <EditText
-                    android:id="@+id/editTextPendingChallanRCNo"
+                    android:id="@+id/editTextChallanHistoryRCNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Enter RC Number"
@@ -70,7 +71,7 @@
                     android:singleLine="true"
                     android:fontFamily="sans-serif"/>
                 <EditText
-                    android:id="@+id/editTextPendingChallanVehicleNo"
+                    android:id="@+id/editTextChallanHistoryVehicleNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Enter Vehicle Number"
@@ -81,7 +82,7 @@
                     android:singleLine="true"
                     android:fontFamily="sans-serif"/>
                 <Button
-                    android:id="@+id/buttonPendingChallanSubmit"
+                    android:id="@+id/buttonChallanHistorySubmit"
                     style="?android:textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -95,5 +96,6 @@
                     android:fontFamily="sans-serif"/>
             </LinearLayout>
         </ScrollView>
+
     </LinearLayout>
 </LinearLayout>
